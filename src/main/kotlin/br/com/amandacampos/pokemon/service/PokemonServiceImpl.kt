@@ -32,12 +32,13 @@ class PokemonServiceImpl: PokemonService {
                          type = pokemon.types[0].type.name
                     }
 
-//                    val abilities: List<String> = pokemon!!.abilities.filter { it.ability.name }
+                    val abilities: List<String> = pokemon!!.abilities.map { it.ability.name }
+
                     Pokemon(
-                            pokemon!!.id.toLong(),
+                            pokemon.id.toLong(),
                             pokemon.name,
                             type,
-                            arrayListOf("")
+                            abilities
                     )}
     }
 
