@@ -17,7 +17,7 @@ class PokemonServiceImpl: PokemonService {
     }
 
     override fun findById(id: Long): Mono<Pokemon> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun findByName(name: String): Mono<Pokemon> {
